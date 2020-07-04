@@ -89,54 +89,62 @@ class Index extends React.Component {
       </Container>
     );
 
-    const FeatureCallout = () => (
+    const Summary = () => (
       <div
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
         <h2>What are the Coopreneurs?</h2>
-        <MarkdownBlock>The Coopreneurs are a cooperative of professionals from various fields. </MarkdownBlock>
+        <MarkdownBlock>The Coopreneurs are a cooperative of professionals from various fields, who seek to transform current startup mechanisms and make work fun again.</MarkdownBlock>
       </div>
     );
 
-    const TryOut = () => (
+    const StartUpMarket = () => (
       <Block id="try">
         {[
           {
             content:
-              'To make your landing page more attractive, use illustrations! Check out ' +
-              '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
-              'The illustrations you see on this page are from unDraw.',
+              'Over 123k Startups die every day. The golden unicorn story obscures the reality many founders face every day. ' +
+              'In order to compensate for the high failure rate, VCs need to push the ventures into profit maximization no matter the costs. ' +
+              'By using the cooperative principles of colaboration, collective ownership and community value, ' +
+              'the Coopreneurs are transforming the way ventures are build.',
             image: `${baseUrl}img/undraw_investment.svg`,
             imageAlign: 'left',
-            title: 'Fixing the VC market',
+            title: 'We want to improve the way we build and operate ventures.',
           },
         ]}
       </Block>
     );
 
-    const Description = () => (
+    const Collaboration = () => (
       <Block background="light">
         {[
           {
             content:
-              'foo collaboration',
+              '60% of startup fail due to issues with the team. ' +
+              'Building the right team at the right time is one of the major requirement for success. '+
+              'Instead of competing for ressources we share them openly between our ventures to archieve a better outcome together.',
             image: `${baseUrl}img/undraw_work_together.svg`,
             imageAlign: 'right',
-            title: 'Do more together',
+            title: 'We believe we can do more together',
           },
         ]}
       </Block>
     );
 
-    const LearnHow = () => (
+    const Workenvironment = () => (
       <Block background="light">
         {[
           {
             content:
-              'The Coopreneurs ',
+              'A stunning 70% of all US employees are unmotivated at work. Why is that? ' +
+              'Most work environments are characterized by politics, a lack of ownership and decision making power ' +
+              'and top-down hierarchies. While it is widely believed that distributed decision making is superior to ' +
+              'communist central planning in an economy, it is still the basic operating system in todays hierarchical companies. ' +
+              'We believe that humans are motivated, engaged and doing their best work when they are fulfilled and empowered. ' +
+              'Self-management and empowerment are the core coopreneurship principles.',
             image: `${baseUrl}img/undraw_good_team.svg`,
             imageAlign: 'right',
-            title: 'We believe working should be fun.',
+            title: 'We believe working should be fun',
           },
         ]}
       </Block>
@@ -179,12 +187,22 @@ class Index extends React.Component {
       return (
         <div className="productShowcaseSection paddingBottom">
           <h2>Wanna know more?</h2>
-          <p>Get in touch in one of our remote Meetups.</p>
+          <p>Get in touch in one of our remote <strong>Meetups.</strong></p>
           <div className="">
             <a className="button" href={pageUrl('users.html')}>
               Register here!
             </a>
           </div>
+        </div>
+      );
+    };
+    const NeedHelp = () => {
+      return (
+        <div className="productShowcaseSection paddingBottom">
+          <h2>Do you need help?</h2>
+          <p>Are you looking for a Front End developer? <strong> We have them!</strong></p>
+          <p>Are you looking for someone who can build a great landing page? <strong>We too!</strong></p>
+          <p>Do you need a workshop master? <strong>We don't have one!</strong></p>
         </div>
       );
     };
@@ -194,12 +212,12 @@ class Index extends React.Component {
         <HomeSplash siteConfig={siteConfig} language={language} />
         <div className="mainContainer">
           {/* <Features />*/}
-          <FeatureCallout />
-          <LearnHow />
-          <TryOut />
-          <Description />
-
+          <Summary />
+          <Workenvironment />
+          <StartUpMarket />
+          <Collaboration />
           <Showcase />
+          <NeedHelp />
         </div>
       </div>
     );
