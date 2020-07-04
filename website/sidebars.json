@@ -1,0 +1,10 @@
+{
+  "docs": {
+    "Proposals": ["doc1"],
+    "Documents": ["doc2"],
+    "Guidelines": ["doc3"]
+  },
+  "docs-other": {
+    "First Category": ["doc4", "doc5"]
+  }
+}
