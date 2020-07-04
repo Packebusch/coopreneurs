@@ -63,7 +63,7 @@ class HomeSplash extends React.Component {
         <div className="inner">
           <ProjectTitle tagline={siteConfig.tagline} title={siteConfig.title} />
           <PromoSection>
-            <Button href={docUrl('doc1.html')}>Read the manifesto</Button>
+            <Button href={docUrl('manifest.html')}>Read the manifesto</Button>
           </PromoSection>
         </div>
       </SplashContainer>
@@ -94,7 +94,7 @@ class Index extends React.Component {
         className="productShowcaseSection paddingBottom"
         style={{textAlign: 'center'}}>
         <h2>What are the Coopreneurs?</h2>
-        <MarkdownBlock>The Coopreneurs are a cooperative of professionals from various fields. We **build** together and **own** together.We seek to combine the new work movement with current startup market mechanisms to improve the well-being of individuals and society as a whole.</MarkdownBlock>
+        <MarkdownBlock>The Coopreneurs are a cooperative of professionals from various fields. </MarkdownBlock>
       </div>
     );
 
@@ -106,23 +106,23 @@ class Index extends React.Component {
               'To make your landing page more attractive, use illustrations! Check out ' +
               '[**unDraw**](https://undraw.co/) which provides you with customizable illustrations which are free to use. ' +
               'The illustrations you see on this page are from unDraw.',
-            image: `${baseUrl}img/undraw_code_review.svg`,
+            image: `${baseUrl}img/undraw_investment.svg`,
             imageAlign: 'left',
-            title: 'Wonderful SVG Illustrations',
+            title: 'Fixing the VC market',
           },
         ]}
       </Block>
     );
 
     const Description = () => (
-      <Block background="dark">
+      <Block background="light">
         {[
           {
             content:
-              'This is another description of how this project is useful',
-            image: `${baseUrl}img/undraw_note_list.svg`,
+              'foo collaboration',
+            image: `${baseUrl}img/undraw_work_together.svg`,
             imageAlign: 'right',
-            title: 'Description',
+            title: 'Do more together',
           },
         ]}
       </Block>
@@ -133,10 +133,10 @@ class Index extends React.Component {
         {[
           {
             content:
-              'Each new Docusaurus project has **randomly-generated** theme colors.',
-            image: `${baseUrl}img/undraw_youtube_tutorial.svg`,
+              'The Coopreneurs ',
+            image: `${baseUrl}img/undraw_good_team.svg`,
             imageAlign: 'right',
-            title: 'Randomly Generated Theme Colors',
+            title: 'We believe working should be fun.',
           },
         ]}
       </Block>
@@ -178,12 +178,11 @@ class Index extends React.Component {
 
       return (
         <div className="productShowcaseSection paddingBottom">
-          <h2>Who is Using This?</h2>
-          <p>This project is used by all these people</p>
-          <div className="logos">{showcase}</div>
-          <div className="more-users">
+          <h2>Wanna know more?</h2>
+          <p>Get in touch in one of our remote Meetups.</p>
+          <div className="">
             <a className="button" href={pageUrl('users.html')}>
-              More {siteConfig.title} Users
+              Register here!
             </a>
           </div>
         </div>

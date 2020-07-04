@@ -1,8 +1,8 @@
 {
   "docs": {
-    "Proposals": ["doc1"],
-    "Documents": ["doc2"],
-    "Guidelines": ["doc3"]
+    "Proposals": ["p_proposal","p_meeting_structure" ,"p_practices" ,"p_docs"],
+    "Documents": ["statutes","manifest"],
+    "Guidelines": []
   },
   "docs-other": {
     "First Category": ["doc4", "doc5"]

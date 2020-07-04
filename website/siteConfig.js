@@ -38,7 +38,7 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'doc1', label: 'Docs'},
+    {doc: 'p_proposal', label: 'Docs'},
     {doc: 'manifest', label: 'Manifesto'},
     {page: 'about', label: 'About'},
     {blog: true, label: 'Blog'},
@@ -48,9 +48,9 @@ const siteConfig = {
   users,
 
   /* path to images for header/footer */
-  headerIcon: 'img/favicon.ico',
-  footerIcon: 'img/favicon.ico',
-  favicon: 'img/favicon.ico',
+  headerIcon: 'img/coopreneurs_signet_color.png',
+  footerIcon: 'img/coopreneurs_signet_color.png',
+  favicon: 'img/coopreneurs_signet_color.png',
 
   /* Colors for website */
   colors: {
