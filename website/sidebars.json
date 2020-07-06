@@ -1,6 +1,6 @@
 {
   "docs": {
-    "Proposals": ["p_proposal","p_meeting_structure" ,"p_practices" ,"p_docs"],
+    "Proposals": ["p_proposal","p_meeting_structure" ,"p_practices" ,"p_docs", "p_idea_validation"],
     "Documents": ["statutes","manifest"],
     "Guidelines": []
   },
