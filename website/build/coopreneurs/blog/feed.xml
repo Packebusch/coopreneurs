@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Coopreneurs Blog</title>
+        <link>https://Packebusch.github.io/blog</link>
+        <description>The best place to stay up-to-date with the latest Coopreneurs news and events.</description>
+        <lastBuildDate>Fri, 11 Mar 2016 06:00:00 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Coopreneurs Blog</title>
+            <url>https://Packebusch.github.io/img/coopreneurs_signet_color.png</url>
+            <link>https://Packebusch.github.io/blog</link>
+        </image>
+        <copyright>Copyright © 2020 Coopreneurs G</copyright>
+        <item>
+            <title><![CDATA[Our first Blog Post]]></title>
+            <link>https://Packebusch.github.io/blog/2016/03/11/blog-post.html</link>
+            <guid>https://Packebusch.github.io/blog/2016/03/11/blog-post.html</guid>
+            <pubDate>Fri, 11 Mar 2016 06:00:00 GMT</pubDate>
+            <description><![CDATA[<p>This is our first blog post. Yeah.</p> ]]></description>
+        </item>
+    </channel>
+</rss>

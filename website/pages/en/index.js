@@ -169,18 +169,7 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Showcase = () => {
-      if ((siteConfig.users || []).length === 0) {
-        return null;
-      }
-
-      const showcase = siteConfig.users
-        .filter(user => user.pinned)
-        .map(user => (
-          <a href={user.infoLink} key={user.infoLink}>
-            <img src={user.image} alt={user.caption} title={user.caption} />
-          </a>
-        ));
+    const Contact = () => {
 
       const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
 
@@ -189,7 +178,7 @@ class Index extends React.Component {
           <h2>Wanna know more?</h2>
           <p>Get in touch in one of our remote <strong>Meetups.</strong></p>
           <div className="">
-            <a className="button" href={pageUrl('users.html')}>
+            <a className="button" href={pageUrl('contact.html')}>
               Register here!
             </a>
           </div>
@@ -216,7 +205,7 @@ class Index extends React.Component {
           <Workenvironment />
           <StartUpMarket />
           <Collaboration />
-          <Showcase />
+          <Contact />
           <NeedHelp />
         </div>
       </div>
