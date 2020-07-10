@@ -31,7 +31,7 @@ class Contact extends React.Component {
             <div className="prose">
               <h1>Register to our online meetup, {this.state.name}.</h1>
               <p>Our virtual meetup takes place at the first Wednesday every month at 8pm. Please join us, if you'd like to talk to us. It's open for everyone no matter the background.</p>
-              <form target="_blank" action="https://hooks.zapier.com/hooks/catch/7976313/oz48j9y" method="POST">
+              <form id="contactForm" target="_blank" action="https://hooks.zapier.com/hooks/catch/7976313/oz48j9y" method="POST">
                 <label>
                   Your Email:
                   <input id="emailInput" type="email" name="email" />
@@ -47,7 +47,7 @@ class Contact extends React.Component {
             </div>
           </div>
         </Container>
-        <script dangerouslySetInnerHTML={{ __html: `document.getElementById("contactSubmit").onclick = function(event) {
+        <script dangerouslySetInnerHTML={{ __html: `document.getElementById("contactForm").onsubmit = function(event) {
           window.location.href = "`+ this.successURL + `";}`}} />
       </div>
     );
