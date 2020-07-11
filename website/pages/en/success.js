@@ -18,7 +18,8 @@ class Success extends React.Component {
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>Success!</h1>
+              <h1>Thanks for registering to our meetup!</h1>
+              <p>A calendar invitation is on it's way. 🚀</p>
             </div>
           </div>
         </Container>

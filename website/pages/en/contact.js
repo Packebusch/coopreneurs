@@ -29,19 +29,15 @@ class Contact extends React.Component {
         <Container padding={['bottom', 'top']}>
           <div className="showcaseSection">
             <div className="prose">
-              <h1>Register to our online meetup, {this.state.name}.</h1>
+              <h1>Register to our online meetup.</h1>
               <p>Our virtual meetup takes place at the first Wednesday every month at 8pm. Please join us, if you'd like to talk to us. It's open for everyone no matter the background.</p>
               <form id="contactForm" target="_blank" action="https://hooks.zapier.com/hooks/catch/7976313/oz48j9y" method="POST">
                 <label>
                   Your Email:
-                  <input id="emailInput" type="email" name="email" />
+                  <input className="input" id="emailInput" type="email" name="email" />
                 </label>
-                <label>
-                  Your name:
-                  <input id="nameInput" type="text" name="name" />
-                </label>
-								<button id="contactSubmit">
-								  Activate Lasers
+								<button className="button" id="contactSubmit">
+								  Register
 								</button>
               </form>
             </div>

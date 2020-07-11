@@ -46,8 +46,11 @@ class Footer extends React.Component {
           </div>
           <div>
             <h5>Community</h5>
-            <a href="#">
+            <a href={this.docUrl('manifest#principles-written-by', this.props.language)}>
               About Us
+            </a>
+            <a href={this.pageUrl('impressum.html', this.props.language)}>
+              Legal Notice / Impressum
             </a>
           </div>
           <div>
