@@ -23,7 +23,7 @@ class Impressum extends React.Component {
           <div className="showcaseSection">
             <div className="prose">
             <h1>Legal Notice / Impressum</h1>
-            <h2>According to § 5 TMG 5 TMG</h2>
+            <h2>According to § 5 TMG</h2>
             <p>Tom Packebusch<br />
             Pfeffingerstra&szlig;e, 9<br />
             04277 Leipzig</p>
