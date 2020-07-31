@@ -70,8 +70,12 @@ class Contact extends React.Component {
 								return;
 							}
 							console.log('------------event------------', event)
-							fetch('https://wh.automate.io/webhook/5f246f11bfb9cd60aa439086', {
+							fetch('https://wh.automate.io/webhook/5f247136bfb9cd60aa4390d7', {
 								method: 'post',
+                headers: {
+                  'Accept': 'application/json',
+                  'Content-Type': 'application/json'
+                },
 								body: JSON.stringify({ email: document.querySelector('#emailInput').value })
 							}).then(function(response) {
 								return response.json();
