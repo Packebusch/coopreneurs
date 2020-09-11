@@ -19,7 +19,7 @@ class Success extends React.Component {
           <div className="showcaseSection">
             <div className="prose">
               <h1>Thanks for registering to our meetup!</h1>
-              <p>A calendar invitation is on it's way. 🚀</p>
+              <p>We will send a the meetup information 2 days before the event. 🚀</p>
             </div>
           </div>
         </Container>

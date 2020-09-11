@@ -68,7 +68,13 @@ const siteConfig = {
   },
 
   // Add custom scripts here that would be placed in <script> tags.
-  scripts: ['https://buttons.github.io/buttons.js'],
+  scripts: ['https://buttons.github.io/buttons.js',
+            {
+              id: "_agile_min_js",
+              src: "https://coopreneurs.agilecrm.com/stats/min/agile-min.js",
+              async: true,
+            },
+          ],
 
   // On page navigation for the current documentation page.
   onPageNav: 'separate',

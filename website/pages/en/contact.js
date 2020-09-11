@@ -13,10 +13,9 @@ const Container = CompLibrary.Container;
 
 class Contact extends React.Component {
 	render() {
-		const {siteConfig, language = ''} = this.props;
+		const {siteConfig} = this.props;
 		const pageUrl = (page) =>
 			this.props.config.baseUrl +
-			(this.props.language ? `${language}/` : "") +
 			page;
 		const successURL = pageUrl("success.html");
 		return (
@@ -32,10 +31,6 @@ class Contact extends React.Component {
 							</p>
 							<form
 								id="contactForm"
-								// target="_blank"
-								// action="https://hooks.zapier.com/hooks/catch/7976313/oz48j9y"
-								// action="#"
-								// method="POST"
 							>
 								<label>
 									Your Email:
@@ -60,7 +55,7 @@ class Contact extends React.Component {
 				<script
 					dangerouslySetInnerHTML={{
 						__html: `
-						function submitMeetupForm(event) {
+            function submitMeetupForm(event) {
 							event.preventDefault();
 							event.stopPropagation();
 							var isFormValid = document.querySelector("#contactForm").checkValidity();
@@ -70,23 +65,16 @@ class Contact extends React.Component {
 								return;
 							}
 							console.log('------------event------------', event)
-							fetch('https://wh.automate.io/webhook/5f247136bfb9cd60aa4390d7', {
-								method: 'post',
-                headers: {
-                  'Accept': 'application/json',
-                  'Content-Type': 'application/json'
-                },
-								body: JSON.stringify({ email: document.querySelector('#emailInput').value })
-							}).then(function(response) {
-								return response.json();
-							}).then(function(data) {
-								if(data.status === 'success') {
-									window.location.href = "${successURL}";
-								} else {
-									document.querySelector("#meetupError").style.display = 'block'
-								}
-								console.log('------------data------------', data)
-							});
+              var contact = {};
+              contact.email = document.querySelector('#emailInput').value;
+              _agile.create_contact(contact, {
+                  success: function (data) {
+                      window.location.href = "${successURL}";
+                  },
+                  error: function (data) {
+                      document.querySelector("#meetupError").style.display = 'block'
+                  }
+              });
 						}
 						document.querySelector("#contactForm").addEventListener('submit',submitMeetupForm)
 						document.querySelector("#contactSubmit").addEventListener('click',submitMeetupForm)

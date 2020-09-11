@@ -15,11 +15,10 @@ const GridBlock = CompLibrary.GridBlock;
 
 class HomeSplash extends React.Component {
   render() {
-    const {siteConfig, language = ''} = this.props;
+    const {siteConfig} = this.props;
     const {baseUrl, docsUrl} = siteConfig;
     const docsPart = `${docsUrl ? `${docsUrl}/` : ''}`;
-    const langPart = `${language ? `${language}/` : ''}`;
-    const docUrl = doc => `${baseUrl}${docsPart}${langPart}${doc}`;
+    const docUrl = doc => `${baseUrl}${docsPart}${doc}`;
 
     const SplashContainer = props => (
       <div className="homeContainer">
@@ -171,7 +170,7 @@ class Index extends React.Component {
 
     const Contact = () => {
 
-      const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+      const pageUrl = page => baseUrl + page;
 
       return (
         <div className="productShowcaseSection paddingBottom">

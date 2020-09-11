@@ -13,9 +13,9 @@ const Container = CompLibrary.Container;
 
 class Impressum extends React.Component {
   render() {
-    const {config: siteConfig, language = ''} = this.props;
+    const {config: siteConfig} = this.props;
     const {baseUrl} = siteConfig;
-    const pageUrl = page => baseUrl + (language ? `${language}/` : '') + page;
+    const pageUrl = page => baseUrl + page;
     this.successURL = pageUrl('success.html');
     return (
       <div className="mainContainer">
