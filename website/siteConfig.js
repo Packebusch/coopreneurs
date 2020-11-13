@@ -28,36 +28,37 @@ const siteConfig = {
 
   // For no header links in the top nav bar -> headerLinks: [],
   headerLinks: [
-    {doc: 'p_proposal', label: 'Docs'},
+    {href: "/#howItWorks", label: "How it works"},
+    {href: "/aboutus", label: "About us"},
     {doc: 'manifest', label: 'Manifesto'},
     {blog: true, label: 'Blog'},
   ],
 
   /* path to images for header/footer */
-  headerIcon: 'img/coopreneurs_signet_color.png',
-  footerIcon: 'img/coopreneurs_signet_color.png',
-  favicon: 'img/coopreneurs_signet_color.png',
+  headerIcon: 'img/coopreneurs_signet.png',
+  footerIcon: 'img/coopreneurs_signet.png',
+  favicon: 'img/coopreneurs_signet.png',
 
   /* Colors for website */
   colors: {
-    primaryColor: '#314256',
-    secondaryColor: '#F9CC3A',
+    primaryColor: '#FFF',
+    secondaryColor: '#FFF',
   },
 
   /* Custom fonts for website */
-  /*
 
-  fonts: {
-    myFont: [
-      "Times New Roman",
-      "Serif"
-    ],
-    myOtherFont: [
-      "-apple-system",
-      "system-ui"
-    ]
-  },
-  */
+
+  // fonts: {
+  //   myFont: [
+  //     "Times New Roman",
+  //     "Serif"
+  //   ],
+  //   myOtherFont: [
+  //     "-apple-system",
+  //     "system-ui"
+  //   ]
+  // },
+
 
   // This copyright info is used in /core/Footer.js and blog RSS/Atom feeds.
   copyright: `Copyright © ${new Date().getFullYear()} Coopreneurs G`,

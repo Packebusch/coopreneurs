@@ -98,6 +98,10 @@ class Index extends React.Component {
     );
 
     const StartUpMarket = () => (
+      <div
+        className="productShowcaseSection paddingTop"
+        style={{textAlign: 'center'}}>
+        <h2>Our Mission</h2>
       <Block id="try">
         {[
           {
@@ -106,12 +110,13 @@ class Index extends React.Component {
               'In order to compensate for the high failure rate, VCs need to push the ventures into profit maximization no matter the costs. ' +
               'By using the cooperative principles of colaboration, collective ownership and community value, ' +
               'the Coopreneurs are transforming the way ventures are build.',
-            image: `${baseUrl}img/undraw_investment.svg`,
+            image: `${baseUrl}img/undraw_work_together2.svg`,
             imageAlign: 'left',
-            title: 'We want to improve the way we build and operate ventures.',
+            title: 'We want to change the way we build and operate ventures',
           },
         ]}
       </Block>
+      </div>
     );
 
     const Collaboration = () => (
@@ -149,23 +154,69 @@ class Index extends React.Component {
       </Block>
     );
 
-    const Features = () => (
+    const Benefits = () => (
+      <div
+        className="productShowcaseSection lightBackground paddingTop"
+        style={{textAlign: 'center'}}>
+        <h2>Benefits</h2>
       <Block layout="fourColumn">
         {[
           {
-            content: 'This is the content of my feature',
-            image: `${baseUrl}img/undraw_react.svg`,
-            imageAlign: 'top',
-            title: 'Feature One',
+            content: 'Work with people that support each other. We share our professional expertise to bring our ideas to life and make the world a bit better every day.',
+            title: 'Benefit from the community',
           },
           {
-            content: 'The content of my second feature',
-            image: `${baseUrl}img/undraw_operating_system.svg`,
-            imageAlign: 'top',
-            title: 'Feature Two',
+            content: 'No need to convince VCs for funding. Instead join a community of experienced professionals who will help you realise your vision.',
+            title: 'Focus on your idea',
+          },
+          {
+            content: "We share profits from all ventures that we create. If your idea fails, you won't hit bottom.",
+            title: 'Diversify risk',
           },
         ]}
       </Block>
+      </div>
+    );
+
+    const HowItWorks = () => (
+      <div
+        id="howItWorks"
+        className="productShowcaseSection lightBackground paddingTop"
+        style={{textAlign: 'center'}}>
+        <h2>How it works</h2>
+      <Block layout="fourColumn">
+        {[
+          {
+            content: 'The Coopreneurs is a cooperative (coop) and it’s members (and therefore owners) are it’s current and former employees.',
+            title: 'Worker Owned Cooperative',
+          },
+          {
+            content: 'Each member receives a base salary. It’s amount is determined by the general assembly of all members.',
+            title: 'Egalitarian Base Salary',
+          },
+          {
+            content: "The members self organise to do their best work",
+            title: 'Organization by Self Management',
+          },
+          {
+            content: "Together, the members validate business ideas. If an idea profs feasible a venture is founded.",
+            title: 'Ventures are owned by the cooperative',
+          },
+          {
+            title: "Members trade time for share of future profits",
+            content: 'When distributing profits the total time invested is taken into account. (Passive income)',
+          },
+          {
+            title: "Former Employees stay members",
+            content: 'Members who’d like to stop working for the coop will be passive members and continue to get their earned passive income.',
+          },
+          {
+            content: "Current employees (active members) have more votes than former employees (passive members)",
+            title: 'Employees have the power',
+          },
+        ]}
+      </Block>
+      </div>
     );
 
     const Contact = () => {
@@ -201,9 +252,9 @@ class Index extends React.Component {
         <div className="mainContainer">
           {/* <Features />*/}
           <Summary />
-          <Workenvironment />
+          <Benefits />
           <StartUpMarket />
-          <Collaboration />
+          <HowItWorks />
           <Contact />
           <NeedHelp />
         </div>
